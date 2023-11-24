@@ -1,0 +1,231 @@
+/* Importer les font family et les icones */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+/* Déclaration de couleurs à utiliser */
+
+:root {
+  --ecrit: #fefefe;
+  --background1: #36494e;
+  --background2: #2b2424;
+  --background3: #e8eddf;
+  --rouge: #804141;
+  --btn: #1d77d1ef;
+  --btnhover: #114be9;
+
+  /* Les variables pour couper le long paragraphe de la section apropos contener valeur */
+
+  --line-h: 24px;
+  --ntn-line-valeur: 15;
+}
+
+body {
+  background: var(--ecrit);
+  color: var(--background2);
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.icone i {
+  color: var(--ecrit);
+  font-size: 20px;
+  border-radius: 50%;
+  background: var(--background3);
+  color: var(--background2);
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  background: var(--btn);
+  padding: 15px 20px;
+  border-radius: 100px;
+  color: var(--ecrit);
+  font-size: 1.06rem;
+}
+
+.btn:hover {
+  border: none;
+  padding: 15px 20px;
+  background: var(--btnhover);
+  border-radius: 100px;
+  color: var(--ecrit);
+  font-size: 1.06rem;
+  cursor: pointer;
+}
+
+/* Style de l'entete du Site */
+
+.entete {
+  background: var(--background1);
+  color: var(--ecrit);
+  position: sticky;
+  top: 0;
+  height: 50px;
+}
+
+.section.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entete-gauche {
+  display: flex;
+  align-items: center;
+}
+
+.icone.gauche {
+  margin-left: 15px;
+}
+
+.icone.gauche i {
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+.entete-droite a {
+  text-align: center;
+  margin-left: 25px;
+}
+
+/* Style de la Section navbar */
+.navbar {
+  box-shadow: 0px 0px 5px var(--background3);
+  /* margin-bottom: 5px; */
+  position: sticky;
+  top: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.section.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section.nav .liens ul {
+  display: flex;
+}
+
+.section.nav .liens ul li a {
+  margin-right: 25px;
+  color: var(--background2);
+  font-weight: 600;
+}
+
+/* Style de la section présentation */
+
+.presentation {
+  max-width: 100%;
+  height: 100vh;
+  background: var(--background3);
+}
+
+.presentation .section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation .section h3 {
+  margin-bottom: 20px;
+  color: var(--background2);
+  font-size: 1rem;
+}
+
+.presentation .section h1 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: var(--background2);
+  margin-bottom: 20px;
+}
+
+.presentation .section .reve {
+  color: var(--background3);
+  font-size: 3rem;
+  background: var(--rouge);
+  padding: 0 5px;
+}
+
+.presentation .section .imgbatiment img {
+  height: 330px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px var(--background2);
+}
+
+.presentation .section .imgbatiment img:hover {
+  transform: scale(1.01);
+}
+
+/* Style de la partie A propos */
+
+.contener-apropos h2 {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.contener-apropos p {
+  margin: 0px 30px 15px 0;
+  line-height: 24px;
+}
+
+.contener-apropos .contener-vision p {
+  margin: 0px 0px 15px 30px;
+}
+
+.contener-apropos .imgapropos img {
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px var(--background2);
+}
+
+.contener-apropos .contener-apercu .imgapropos img {
+  height: 280px;
+}
+
+.contener-apropos .contener-vision img,
+.contener-apropos .contener-valeur img {
+  height: 350px;
+}
+
+.contener-apropos .contener-apercu,
+.contener-apropos .contener-vision,
+.contener-apropos .contener-valeur {
+  display: flex;
+  align-items: center;
+}
+
+.contener-apropos .contener-valeur .valeur {
+  max-height: calc(var(--line-h) * var(--ntn-line-valeur));
+  overflow: hidden;
+}
