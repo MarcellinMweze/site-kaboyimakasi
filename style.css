@@ -24,7 +24,7 @@
   /* Les variables pour couper le long paragraphe de la section apropos contener valeur */
 
   --line-h: 24px;
-  --ntn-line-valeur: 15;
+  --ntn-line-valeur: 16;
 }
 
 body {
@@ -228,4 +228,10 @@ body {
 .contener-apropos .contener-valeur .valeur {
   max-height: calc(var(--line-h) * var(--ntn-line-valeur));
   overflow: hidden;
+  position: relative;
+}
+
+.contener-apropos .contener-valeur .valeur ::after {
+  content: " ...";
+  cursor: pointer;
 }

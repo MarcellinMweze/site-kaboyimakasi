@@ -91,9 +91,11 @@
                 </div>
             </div>
         </div>
-    <div class="footer">
-        
-    </div>
+        <div class="footer">
+            <div class="footer-contener">
+                <p>Marcellin</p>
+            </div>
+        </div>
     </main>
 </body>
 
