@@ -16,7 +16,7 @@
   --ecrit: #fefefe;
   --background1: #36494e;
   --background2: #2b2424;
-  --background3: #e8eddf;
+  --background3: whitesmoke;
   --rouge: #804141;
   --btn: #1d77d1ef;
   --btnhover: #114be9;
@@ -24,7 +24,7 @@
   /* Les variables pour couper le long paragraphe de la section apropos contener valeur */
 
   --line-h: 24px;
-  --ntn-line-valeur: 16;
+  --ntn-line-valeur: 18;
 }
 
 body {
@@ -111,7 +111,6 @@ body {
 /* Style de la Section navbar */
 .navbar {
   box-shadow: 0px 0px 5px var(--background3);
-  /* margin-bottom: 5px; */
   position: sticky;
   top: 50px;
 }
@@ -174,7 +173,7 @@ body {
   color: var(--background3);
   font-size: 3rem;
   background: var(--rouge);
-  padding: 0 5px;
+  padding: 0 5px 0 9px;
 }
 
 .presentation .section .imgbatiment img {
@@ -189,49 +188,107 @@ body {
 
 /* Style de la partie A propos */
 
-.contener-apropos h2 {
+.vision,
+.domaine {
+  background: var(--background3);
+  padding-bottom: 60px;
+}
+
+.apercu {
+  margin-bottom: 40px;
+}
+
+.apercu h2,
+.vision h2,
+.nosvaleurs h2,
+.domaine h2 {
   margin: 50px 0;
   text-align: center;
   font-size: 2.5rem;
 }
 
-.contener-apropos p {
+.domaine h2 {
+  padding-top: 50px;
+}
+
+.apercu p,
+.vision p,
+.nosvaleurs p,
+.domaine .faire p {
   margin: 0px 30px 15px 0;
   line-height: 24px;
 }
 
-.contener-apropos .contener-vision p {
+.vision p {
   margin: 0px 0px 15px 30px;
 }
 
-.contener-apropos .imgapropos img {
-  border-radius: 12px;
-  box-shadow: 0px 0px 5px var(--background2);
-}
-
-.contener-apropos .contener-apercu .imgapropos img {
+.apercu img {
   height: 280px;
 }
 
-.contener-apropos .contener-vision img,
-.contener-apropos .contener-valeur img {
+.vision img,
+.nosvaleurs img,
+.apercu img {
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px var(--background2);
   height: 350px;
 }
 
-.contener-apropos .contener-apercu,
-.contener-apropos .contener-vision,
-.contener-apropos .contener-valeur {
+.contener-apercu,
+.contener-vision,
+.contener-valeur {
   display: flex;
   align-items: center;
 }
 
-.contener-apropos .contener-valeur .valeur {
-  max-height: calc(var(--line-h) * var(--ntn-line-valeur));
-  overflow: hidden;
-  position: relative;
+.domaine .faire {
+  max-width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.contener-apropos .contener-valeur .valeur ::after {
-  content: " ...";
-  cursor: pointer;
+.domaine .faire p {
+  text-align: justify;
+}
+
+.domaine .faire i {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: var(--btnhover);
+}
+
+/* Style footer */
+
+.footer {
+  background: var(--background2);
+  height: 310px;
+  color: var(--ecrit);
+}
+
+.contener-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  padding-top: 40px;
+}
+
+.expertise,
+.aide,
+.contact {
+  border-left: 1px dashed var(--ecrit);
+}
+
+.expertise h3,
+.aide h3,
+.contact h3 {
+  margin: 0 0 20px 7px;
+}
+
+.expertise p,
+.contact p {
+  line-height: 24px;
+  margin-left: 7px;
 }
