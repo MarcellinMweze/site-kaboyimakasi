@@ -17,7 +17,7 @@
                     <span class="icone gauche"><i class="fa-solid fa-phone"></i> +243990548021</span>
                 </div>
                 <div class="entete-droite">
-                    <span class="icone"><a href=""><i class="fa-solid fa-moon"></i></a></span>
+                    <span class="icone"><a href=""><i class="fa-regular fa-moon"></i></a></span>
                     <span class="icone"><a href=""><i class="fa-brands fa-facebook"></i></a></span>
                     <span class="icone"><a href=""><i class="fa-brands fa-whatsapp"></i></a></span>
                 </div>
@@ -44,7 +44,7 @@
                 <div>
                     <h3>Entreprise de Contruction professionnelle</h3>
                     <h1>Nous construisons <br><span class="reve">vos reves</span></h1>
-                    <button class="btn contact">Nous contacter</button>
+                    <button class="btn">Nous contacter</button>
                 </div>
                 <div class="imgbatiment">
                     <img src="./images/batiment1.jpg" alt="">
@@ -129,17 +129,18 @@
                             <li><a href="">Acceuil</a></li>
                             <li><a href="">A Propos</a></li>
                             <li><a href="">Nos Projets</a></li>
-                            <li><a href="">Contactez-nous</a></i>
+                            <li><a href="">Contactez-nous</a></li>
                         </ul>
                     </div>
                     <div class="contact">
                         <h3>Contact</h3>
-                        <p>Entre 16 et 17ième Poteau, Route Kinsevere, Lubumbashi-RD Congo</p>
-                        <p>km.engineeringsarl@kaboyimakasi.com</p>
-                        <p>+243990548021</p>
-                        <p>www.kaboyimakasi.com</p>
+                        <p><i class="fa-solid fa-house"></i>Entre 16 et 17ième Poteau, Route Kinsevere, Lubumbashi-RD Congo</p>
+                        <p><i class="fa-solid fa-at"></i>km.engineeringsarl@kaboyimakasi.com</p>
+                        <p><i class="fa-solid fa-mobile-screen"></i>+243990548021</p>
+                        <p><i class="fa-solid fa-globe"></i>www.kaboyimakasi.com</p>
                     </div>
                 </div>
+                <p>&copy; 2023 KME. Tout droit réservé.</p>
             </div>
         </div>
     </main>

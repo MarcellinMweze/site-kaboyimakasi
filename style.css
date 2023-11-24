@@ -1,13 +1,14 @@
 /* Importer les font family et les icones */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Poppins;
 }
 
 /* Déclaration de couleurs à utiliser */
@@ -264,7 +265,7 @@ body {
 
 .footer {
   background: var(--background2);
-  height: 310px;
+  height: 340px;
   color: var(--ecrit);
 }
 
@@ -273,22 +274,52 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.aide ul li {
+  margin: 0 0 20px 7px;
+}
+
+.aide ul li a {
+  color: var(--ecrit);
+  padding: 10px;
+  font-weight: 500;
+}
+
+.aide ul li a:hover {
+  background: var(--ecrit);
+  border-radius: 8px;
+  color: var(--background2);
+  font-weight: 600;
 }
 
 .expertise,
 .aide,
 .contact {
-  border-left: 1px dashed var(--ecrit);
+  border-left: 1px dashed var(--background3);
 }
 
 .expertise h3,
 .aide h3,
 .contact h3 {
   margin: 0 0 20px 7px;
+  font-size: 16px;
 }
 
 .expertise p,
 .contact p {
   line-height: 24px;
   margin-left: 7px;
+  font-size: 14px;
+}
+
+.contact p {
+  line-height: 32px;
+}
+
+.contact i {
+  margin-right: 5px;
+  font-size: 20px;
+  vertical-align: middle;
 }
