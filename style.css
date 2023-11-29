@@ -78,7 +78,7 @@ body {
 /* Style de l'entete du Site */
 
 .entete {
-  background: var(--background1);
+  background: var(--background2);
   color: var(--ecrit);
   position: sticky;
   top: 0;
