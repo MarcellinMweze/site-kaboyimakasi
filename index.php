@@ -1,44 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<?php
+include('./header.php');
+?>
 
 <body>
     <main>
-        <div class="entete">
-            <div class="section entete">
-                <div class="entete-gauche">
-                    <p>Votre Solution pour une Construction Moderne</p>
-                    <span class="icone gauche"><i class="fa-solid fa-phone"></i> +243990548021</span>
-                </div>
-                <div class="entete-droite">
-                    <span class="icone"><a href=""><i class="fa-regular fa-moon"></i></a></span>
-                    <span class="icone"><a href=""><i class="fa-brands fa-facebook"></i></a></span>
-                    <span class="icone"><a href=""><i class="fa-brands fa-whatsapp"></i></a></span>
-                </div>
-            </div>
-        </div>
-        <div class="navbar">
-            <div class="section nav">
-                <div class="logo">
-                    <a href=""><img src="./images/Logo.jpeg" alt="Logo de la Société"></a>
-                    <span><strong>KABOYI MAKASI ENGINEERING SARL</strong></span>
-                </div>
-                <div class="liens">
-                    <ul>
-                        <li><a href="">Acceuil</a></li>
-                        <li><a href="">A propos</a></li>
-                        <li><a href="">Nos Projets</a></li>
-                        <li><a href="">Contactez-nous</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <?php
+        include('./navbar.php');
+        ?>
         <div class="presentation">
             <div class="section">
                 <div>
@@ -116,33 +84,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="section">
-                <div class="contener-footer">
-                    <div class="expertise">
-                        <h3>Notre Expertise</h3>
-                        <p>Notre expertise est une compréhension approfondie des travaux de Génie Civil et des besoins géographiquement spécifiques; notre expérience et notre myriade de solution clients nous laissent dans une position unique pour devenir la première société de Génie Civil et de Construction de la région.</p>
-                    </div>
-                    <div class="aide">
-                        <h3>Aide</h3>
-                        <ul>
-                            <li><a href="">Acceuil</a></li>
-                            <li><a href="">A Propos</a></li>
-                            <li><a href="">Nos Projets</a></li>
-                            <li><a href="">Contactez-nous</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact">
-                        <h3>Contact</h3>
-                        <p><i class="fa-solid fa-house"></i>Entre 16 et 17ième Poteau, Route Kinsevere, Lubumbashi-RD Congo</p>
-                        <p><i class="fa-solid fa-at"></i>km.engineeringsarl@kaboyimakasi.com</p>
-                        <p><i class="fa-solid fa-mobile-screen"></i>+243990548021</p>
-                        <p><i class="fa-solid fa-globe"></i>www.kaboyimakasi.com</p>
-                    </div>
-                </div>
-                <p>&copy; 2023 KME. Tout droit réservé.</p>
-            </div>
-        </div>
+        <?php
+        include('./footer.php');
+        ?>
     </main>
 </body>
 
