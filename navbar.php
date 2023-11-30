@@ -26,7 +26,7 @@ include('./header.php');
             <div class="liens">
                 <ul>
                     <li><a href="./index.php">Acceuil</a></li>
-                    <li><a href="">A propos</a></li>
+                    <li><a href="#apropos">A propos</a></li>
                     <li><a href="./nosprojets.php">Nos Projets</a></li>
                     <li><a href="">Contactez-nous</a></li>
                 </ul>

@@ -19,9 +19,9 @@ include('./header.php');
                 </div>
             </div>
         </div>
-        <div class="apercu">
+        <div class="apercu"> 
             <div class="section">
-                <h2>Aperçu</h2>
+                <h2 id="apropos">Aperçu</h2>
                 <div class="contener-apercu">
                     <div class="contener-apercu">
                         <div class="apercu">
